@@ -1,0 +1,39 @@
+.footer{
+    height: 129px;
+    background: linear-gradient(170.36deg, #038C73 46.78%, #6CC47B 97.01%);
+    padding: 0 21.15%;
+    display: flex;
+    /* flex: 0 0 100%; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100vw;
+}
+.footer__content_item{
+    display: flex;
+    flex: 0 0 33.3333%;
+    justify-content: center;
+}
+.footer__content_item > a,
+.footer__content_item > p{
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    
+    text-decoration: none;
+}
+.footer__content_item > a{
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.footer__content_item > p{
+    color: rgba(255, 255, 255, 0.5)!important;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.footer__content_item a,
+.footer__content_item p{
+    color: #fff;
+}
