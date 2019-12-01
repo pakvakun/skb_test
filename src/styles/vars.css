@@ -1,5 +1,16 @@
 :root{
+    /* colors */
+    --black: #000000;
+    --green1: #038C73;
+    --grey: #ABB09F;
+    --white: #FFFFFF;
+    
+    /* fonts */
+    --font: Formular;
+
+    /* dimensions */
     --header_height: 100px;
     --footer_height: 129px;
+
 
 }
