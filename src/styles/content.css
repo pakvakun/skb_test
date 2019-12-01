@@ -1,0 +1,23 @@
+.content{
+    height: calc(100vh - (var(--header_height) + var(--footer_height)));
+    background: url(../img/bg.png) center no-repeat;
+    display: flex;
+    flex-direction: row;
+}
+.content__cards{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+}
+.content__media{
+    display: flex;
+    flex: 0 0 50%;
+    height: 100%;
+    object-fit: contain;
+}
+.superman{
+    background: url(../img/popov-екз.png) center no-repeat;
+    width: 100%;
+    background-size: contain;
+
+}

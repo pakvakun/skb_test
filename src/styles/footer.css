@@ -1,5 +1,5 @@
 .footer{
-    height: 129px;
+    height: var(--footer_height);
     background: linear-gradient(170.36deg, #038C73 46.78%, #6CC47B 97.01%);
     padding: 0 21.15%;
     display: flex;

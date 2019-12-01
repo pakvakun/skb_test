@@ -1,5 +1,5 @@
 .header{
-    height: 100px;
+    height: var(--header_height);
     display: flex;
     flex-direction: row;
     padding: 0 21.15%;
