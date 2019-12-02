@@ -36,31 +36,141 @@
     font-size: 15px;
     line-height: 25px;
     color: var(--grey);
+    margin-bottom: 27px;
 }
 .content__main_cards{
     display: flex;
     flex-direction: column;
-    flex: 0 0 50%;
+    max-width: 80%;
 }
 .content__card{
     width: 100%;
-    height: 409px;
+    height: auto;
+    border-radius: 5px;
+    padding: 15px 40px;
+    margin-bottom: 40px;
+
+}
+.content__card_white{
     background: #FFFFFF;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
 }
 .content__card_grey{
-    width: 100%;
-    height: 409px;
     background: transparent;
     border: 1px solid #DCDFD5;
-    border-radius: 5px;
+}
+.content__card_badge{
+    display: flex;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px 10px;
+    justify-content: center;
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    border-radius: 3px;
 }
 .content__card_badge-top{
     background: linear-gradient(165.27deg, #038C73 46.78%, #6CC47B 97.01%);
 }
 .content__card_badge-other{
     background: #DCDFD5;
+}
+.content__card_header{
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--black);
+    margin-top: 9px;
+}
+.content__card_subheader{
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+    margin-top: 6px;
+}
+.content__card_options{
+    display: flex;
+    flex-direction: row;
+    margin-top: 26px;
+}
+.content__card_options-names{
+    display: flex;
+    flex: 0 0 50%;
+    flex-direction: column;
+}
+.content__card_options-names div{
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: var(--grey);
+}
+.content__card_options-values{
+    display: flex;
+    flex: 0 0 50%;
+    flex-direction: column;
+}
+.content__card_options-values div {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+}
+.content__card_btn{
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--white);
+    padding: 21px;
+    background: var(--coral);
+    border-radius: 60px;
+    cursor: pointer;
+    margin-top: 27px;
+}
+.content__card_btn:focus{
+    outline: none;
+}
+.content__main_btnBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 95%;
+    margin-bottom: 79px;
+}
+.content__main_btnBlock-btn{
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--coral);
+    background: transparent; 
+    border: 2px solid var(--coral);
+    box-sizing: border-box;
+    border-radius: 60px;
+    padding: 10px 10px;
+    min-width: 40%;
+    max-width: 50%;
+    cursor: pointer;
+}
+.content__main_btnBlock-btn:focus{
+    outline: none;
 }
 .content__media{
     display: flex;
@@ -74,4 +184,10 @@
     width: 100%;
     background-size: contain;
 
+}
+.text-white{
+    color: var(--white);
+}
+.text-grey{
+    color: var(--darkGrey);
 }
