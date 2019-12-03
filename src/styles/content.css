@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     padding-left: 21%;
-    padding-top: 145px;
+    /* padding-top: 145px; */
 }
 .content__main{
     display: flex;
@@ -20,6 +20,7 @@
     line-height: 110%;
     color: var(--green1);
     white-space: nowrap;
+    padding-top: 145px;
 }
 .content__main_offer{
     font-family: var(--font);
@@ -95,6 +96,14 @@
     line-height: 22px;
     color: var(--black);
     margin-top: 6px;
+}
+.content__card_subtitle{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #C1C1C1;
 }
 .content__card_options{
     display: flex;
@@ -184,6 +193,60 @@
     width: 100%;
     background-size: contain;
 
+}
+.icon-check{
+    width: 73px;
+    height: 73px;
+    background: linear-gradient(111.57deg, #038C73 46.78%, #6CC47B 97.01%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sparta{
+    padding-top: 54px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sparta__congretulations{
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--black);
+
+}
+.sparta__willWorkInSKB--{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--black);
+    padding-bottom: 30px;
+}
+.content__info_header{
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--black);
+}
+.content__info_text{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black);
+    padding-left: 15px;
+    padding-right: 20px;
 }
 .text-white{
     color: var(--white);

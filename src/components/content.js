@@ -3,6 +3,10 @@ import React from 'react';
 
 //styles
 import '../styles/content.css';
+import Check from '../img/check';
+import Location from '../img/location';
+import Passport from '../img/passport';
+import BankForm from '../img/bankForm';
 
 //data
 // import Offers from '../sources/offers'
@@ -112,10 +116,12 @@ export default class Content extends React.Component {
     renderSparta = () => {
         return(
             <>
-                <div>
-                    <div>check</div>
-                    <div>Поздравляем!</div>
-                    <div>{this.state.people.name}! Ваша заявка на кредит наличными одобрена</div>
+                <div className='sparta'>
+                    <div className='icon-check'>
+                        <Check />
+                    </div>
+                    <div className='sparta__congretulations'>Поздравляем!</div>
+                    <div className='sparta__willWorkInSKB--'>{this.state.people.name}! Ваша заявка на кредит наличными одобрена</div>
                     <div className={`content__card  content__card_white`}>
                         <div dangerouslySetInnerHTML={{__html: this.state.clickedOffer.product_title}} className='content__card_header' style={{fontSize: '24px', lineHeight: '40px'}}/>
                         <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
@@ -147,28 +153,39 @@ export default class Content extends React.Component {
                                 </div>
                             </div>
                         </div>
+                        <div className='content__card_subtitle'>
+                            <div>(без справки о доходах по форме банка)</div>
+                        </div>
                     </div>
                     <div style={{display: 'flex', flexDirection: 'row'}}>
                         <div style={{display: 'flex', flexDirection: 'column'}}>
-                            <div>Мы ждём вас по адресу:</div>
+                            <div className='content__info_header'>Мы ждём вас по адресу:</div>
                             <div style={{display: 'flex', flexDirection: 'row'}}>
-                                <div>geo</div>
-                                <div>г. Астрахань, ул. Кирова, 20/3, литер А, пом. 37</div>
+                                <div>
+                                    <Location />
+                                </div>
+                                <div className='content__info_text'>г. Астрахань, ул. Кирова, 20/3, литер А, пом. 37</div>
                             </div>
                         </div>
                         <div style={{display: 'flex', flexDirection: 'column'}}>
-                            <div>Не забудьте с собой взять:</div>
+                            <div className='content__info_header'>Не забудьте с собой взять:</div>
                             <div style={{display: 'flex', flexDirection: 'row'}}>
-                                <div>passport</div>
-                                <div>паспорт гражданина РФ</div>
-                                <div>bankForm</div>
-                                <div>справка по форме банка</div>
+                                <div>
+                                    <Passport />
+                                </div>
+                                <div className='content__info_text'>паспорт гражданина РФ</div>
+                                <div>
+                                    <BankForm />
+                                </div>
+                                <div className='content__info_text'>справка по форме банка</div>
                             </div>
                         </div>
                     </div>
-                    <button className='content__card_btn' onClick={()=>this.handleClickMoney()}>
-                        На главную страницу
-                    </button>
+                    <div style={{width: '100%', display: 'flex', justifyContent: 'flex-start'}}>
+                        <button className='content__card_btn' style={{marginBottom: 36}} onClick={()=>this.handleClickMoney()}>
+                            На главную страницу
+                        </button>
+                    </div>
                 </div>
 
 
